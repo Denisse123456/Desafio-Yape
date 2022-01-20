@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ESCUELA EVERIS OCTUBRE" />
+        <module name="DESAFIO YAPE DENISSE BAZAN" />
+        <module name="ESCUELA EVERIS OCTUBRE - Victor" />
+        <module name="ESCUELA EVERIS TAREA - VICTOR BAZÀN" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

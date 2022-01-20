@@ -1,0 +1,13 @@
+@EjemploDeAutomatizacionAPIs
+Característica: Automatización de APIs
+  Como un estudiante de escuela
+  Quiero redactar y automatizar APIs
+  Para obtener valores y respuestas de las solicitudes enviadas
+
+  @EjemploDeAutomatizacionAPIs @Restful-Booker @CrearBookHappyPath
+  Escenario: Crear book correctamente                                    [90m# src/test/resources/features/ejemploAutomatizacionAPI.feature:96[0m
+    [32mDado [0m[32mque configuro el body del servicio: "[0m[32m[1mcrearBook[0m[32m"[0m                 [90m# APIStepDefinition.configuroElBodyDelServicio(String,DataTable)[0m
+    [32mY [0m[32mconfiguro las cabeceras[0m                                            [90m# APIStepDefinition.configuroLasCabeceras(DataTable)[0m
+    [32mCuando [0m[32mejecuto el servicio con la configuracion del body y cabeceras[0m [90m# APIStepDefinition.ejecutoElServicioConLaConfiguracionDelBodyYCabeceras(DataTable)[0m
+    [32mEntonces [0m[32mvalido que el codigo de respuesta sea "[0m[32m[1m200[0m[32m"[0m                 [90m# APIStepDefinition.validoQueElCodigoDeRespuestaSea(int)[0m
+    [32mY [0m[32mguardo la respuesta de la ejecucion[0m                                [90m# APIStepDefinition.guardoLaRespuestaDeLaEjecucion()[0m

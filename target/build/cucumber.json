@@ -1,0 +1,210 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 287577200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "APIStepDefinition.before(Scenario)"
+            }
+          }
+        ],
+        "line": 96,
+        "name": "Crear book correctamente",
+        "description": "",
+        "id": "automatización-de-apis;crear-book-correctamente",
+        "type": "scenario",
+        "keyword": "Escenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 159745400,
+              "status": "passed"
+            },
+            "line": 97,
+            "name": "que configuro el body del servicio: \"crearBook\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "crearBook",
+                  "offset": 37
+                }
+              ],
+              "location": "APIStepDefinition.configuroElBodyDelServicio(String,DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "key",
+                  "valor"
+                ]
+              },
+              {
+                "cells": [
+                  "firstname",
+                  "Jim"
+                ]
+              },
+              {
+                "cells": [
+                  "lastname",
+                  "Brown"
+                ]
+              },
+              {
+                "cells": [
+                  "totalprice",
+                  "111"
+                ]
+              },
+              {
+                "cells": [
+                  "depositpaid",
+                  "true"
+                ]
+              },
+              {
+                "cells": [
+                  "additionalneeds",
+                  "Breakfast"
+                ]
+              },
+              {
+                "cells": [
+                  "bookingdates.checkin",
+                  "2018-01-01"
+                ]
+              },
+              {
+                "cells": [
+                  "bookingdates.checkout",
+                  "2019-01-01"
+                ]
+              }
+            ],
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 9385700,
+              "status": "passed"
+            },
+            "line": 106,
+            "name": "configuro las cabeceras",
+            "match": {
+              "location": "APIStepDefinition.configuroLasCabeceras(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "cabeceras",
+                  "valor"
+                ]
+              },
+              {
+                "cells": [
+                  "Content-Type",
+                  "application/json"
+                ]
+              }
+            ],
+            "keyword": "Y "
+          },
+          {
+            "result": {
+              "duration": 3384101700,
+              "status": "passed"
+            },
+            "line": 109,
+            "name": "ejecuto el servicio con la configuracion del body y cabeceras",
+            "match": {
+              "location": "APIStepDefinition.ejecutoElServicioConLaConfiguracionDelBodyYCabeceras(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "servicio",
+                  "tipo",
+                  "url",
+                  "metodo",
+                  "formato"
+                ]
+              },
+              {
+                "cells": [
+                  "Booking - CreateBook",
+                  "https://restful-booker.herokuapp.com",
+                  "/booking",
+                  "POST",
+                  "txt"
+                ]
+              }
+            ],
+            "keyword": "Cuando "
+          },
+          {
+            "result": {
+              "duration": 3051300,
+              "status": "passed"
+            },
+            "line": 112,
+            "name": "valido que el codigo de respuesta sea \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 39
+                }
+              ],
+              "location": "APIStepDefinition.validoQueElCodigoDeRespuestaSea(int)"
+            },
+            "keyword": "Entonces "
+          },
+          {
+            "result": {
+              "duration": 9678900,
+              "status": "passed"
+            },
+            "line": 113,
+            "name": "guardo la respuesta de la ejecucion",
+            "match": {
+              "location": "APIStepDefinition.guardoLaRespuestaDeLaEjecucion()"
+            },
+            "keyword": "Y "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@EjemploDeAutomatizacionAPIs"
+          },
+          {
+            "name": "@Restful-Booker"
+          },
+          {
+            "name": "@CrearBookHappyPath"
+          }
+        ]
+      }
+    ],
+    "name": "Automatización de APIs",
+    "description": "  Como un estudiante de escuela\n  Quiero redactar y automatizar APIs\n  Para obtener valores y respuestas de las solicitudes enviadas",
+    "id": "automatización-de-apis",
+    "keyword": "Característica",
+    "uri": "src/test/resources/features/ejemploAutomatizacionAPI.feature",
+    "tags": [
+      {
+        "name": "@EjemploDeAutomatizacionAPIs",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

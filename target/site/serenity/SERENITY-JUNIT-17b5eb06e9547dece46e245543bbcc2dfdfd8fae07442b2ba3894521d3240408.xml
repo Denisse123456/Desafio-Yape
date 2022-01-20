@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Automatización de APIs" skipped="0" tests="1" time="7.47" timestamp="2021-10-13 12:51:02"><testcase name="Crear book erroneamente"><failure message="Invalid date" type="java.lang.AssertionError">Invalid date</failure><system-err>Invalid date&#13;
+com.bdd.api.stepdefinition.APIStepDefinition.validoQueElBodyDeRespuestaSea(APIStepDefinition.java:74)&#13;
+✽.valido que el body de respuesta sea "Invalid date"(src/test/resources/features/ejemploAutomatizacionAPI.feature:133)&#13;
+</system-err></testcase></testsuite>
